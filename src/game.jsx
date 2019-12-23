@@ -12,18 +12,20 @@ class Game extends React.Component {
 
     handleClick (num)  {
         let arry = this.state.player_select;
+        if (this.state.player_select[num]===null){
         
         if(this.state.player_num === 1) {
             arry[num] = "X"; 
             this.setState({player_num: 2,player_select: arry})
         }
         else {
-            arry[num] = "0";
+            arry[num] = "O";
             this.setState({player_num: 1,player_select: arry})
-        }     
+    }   
+        }
     }
     render(){
-        return(
+        return( 
         <div >
             <h3> Now player {this.state.player_num}'s' Turn</h3>
             <button className="box" onClick={() => this.handleClick(0)}>{this.state.player_select[0]}</button>
