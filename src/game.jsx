@@ -25,6 +25,12 @@ class Game extends React.Component {
         }
     }
     render(){
+        let finalResult ="Game over!"
+        for (var i = 0; i < 9; i++) {
+            if(this.state.player_select[i] === null){
+                finalResult = "";
+            }
+        }
         return( 
         <div >
             <h3> Now player {this.state.player_num}'s' Turn</h3>
@@ -39,6 +45,7 @@ class Game extends React.Component {
             <button className="box" onClick={() => this.handleClick(6)}>{this.state.player_select[6]}</button>
             <button className="box" onClick={() => this.handleClick(7)}>{this.state.player_select[7]}</button>
             <button className="box" onClick={() => this.handleClick(8)}>{this.state.player_select[8]}</button>
+            <h1>{finalResult}</h1>
         </div>
         )
     }
