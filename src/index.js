@@ -3,15 +3,20 @@ import ReactDom from "react-dom"
 import {BrowserRouter,Route,Switch,Link} from "react-router-dom"
 import App from "./app"
 import About from "./about"
+import Game from "./game"
 
 function Main () {
     return(
     <div>
         <BrowserRouter>
+            <div className="navbar">
             <Link to = "/">Tic-Tac-toe</Link>
             <Link to = "/about">About Game</Link>
+            <Link to = "/game">Lets play!</Link>
+            </div>
             <Switch>
             <Route path="/about"><About /></Route>
+            <Route path="/game"><Game /></Route>
             <Route path="/"><App /></Route> 
             </Switch>
         </BrowserRouter>

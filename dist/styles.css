@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    background-color: #5cdb95;
+}
+
+.navbar {
+    height: 100px;
+    background-color: #333;
+    color: whitesmoke;
+    margin-bottom: 150px;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    background-color: rgb(206, 219, 207); 
+    border: 2px solid rgb(2, 0, 3); 
+    color: white;
+    padding: 40px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+}
