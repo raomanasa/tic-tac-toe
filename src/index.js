@@ -10,9 +10,9 @@ function Main () {
     <div>
         <BrowserRouter>
             <div className="navbar">
-            <Link to = "/">Tic-Tac-toe</Link>
-            <Link to = "/about">About Game</Link>
-            <Link to = "/game">Lets play!</Link>
+            <Link to = "/" className="header-style"><img src="dist/logo.png"/> </Link>
+            <Link to = "/about" className="menu-style">About-Game</Link>
+            <Link to = "/game" className="menu-style">Lets-play!</Link>
             </div>
             <Switch>
             <Route path="/about"><About /></Route>
