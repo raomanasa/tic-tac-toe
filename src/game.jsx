@@ -74,7 +74,7 @@ class Game extends React.Component {
             finalResult = null;
         }
         return( 
-         <div>
+    <div>
             {finalResult === null && <h3 > Now player {this.state.player_num}'s' Turn</h3>}
             <div className="row">
             <button className="box" onClick={() => this.handleClick(0)}>{this.state.player_select[0]}</button>
